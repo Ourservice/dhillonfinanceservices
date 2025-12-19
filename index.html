@@ -1,9 +1,23 @@
-<!DOCTYPE html>
-<html>
+    <!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Loan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO TITLE -->
+  <title>Dhillon Finance Services | Easy Loan Assistance in Ludhiana</title>
+
+  <!-- SEO META TAGS -->
+  <meta name="description" content="Dhillon Finance Services offers home loans, personal loans, business loans, and loan against property in Ludhiana. Simple loan process and trusted guidance.">
+  <meta name="keywords" content="loan in Ludhiana, home loan Ludhiana, personal loan, business loan, loan against property, Dhillon Finance">
+  <meta name="author" content="Dhillon Finance Services">
+  <meta name="robots" content="index, follow">
+
+  <!-- OPEN GRAPH (for sharing) -->
+  <meta property="og:title" content="Dhillon Finance Services | Loan Assistance in Ludhiana">
+  <meta property="og:description" content="Apply for home loan, business loan, and personal loan in Ludhiana with Dhillon Finance Services.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abhisim66-coder.github.io/">
 
   <style>
     html {
@@ -13,6 +27,7 @@
     body {
       margin: 0;
       animation: fadeIn .8s ease;
+      font-family: Arial, sans-serif;
     }
 
     nav {
@@ -28,17 +43,19 @@
 
     #home {
       background-color: #4169E1;
-      font-size: 1.5rem;
-      padding: 40px 20px; /* adjusted for mobile */
+      font-size: 1.2rem;
+      padding: 40px 20px;
       color: white;
     }
 
-    #services {
+    #services, #contact, #information {
       box-shadow: 4px 2px 20px grey;
       padding: 40px;
+      margin: 20px;
+      border-radius: 10px;
     }
 
-    input {
+    input, select {
       border-radius: 20px;
       height: 40px;
       width: 100%;
@@ -46,32 +63,20 @@
       padding: 10px;
     }
 
-    select {
+    button {
       border-radius: 20px;
-      width: 100%;
-      max-width: 300px;
-    }
-
-    #contact {
-      box-shadow: 4px 2px 20px grey;
-      padding: 40px;
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
     }
 
     #location {
       box-shadow: 4px 2px 20px grey;
       border-radius: 20px;
       padding: 20px;
-    }
-
-    button {
-      border-radius: 20px;
-      background-color: green;
-      color: white;
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
+      margin-bottom: 20px;
     }
 
     #box {
@@ -79,61 +84,81 @@
       padding: 10px;
       width: 100%;
       max-width: 250px;
+      border-radius: 10px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
     }
   </style>
 </head>
 
 <body>
+
 <nav>
-  <a href="#home">Home</a>|
-  <a href="#services">Services</a>|
-  <a href="#contact">Contact</a>|
+  <a href="#home">Home</a> |
+  <a href="#services">Services</a> |
+  <a href="#contact">Contact</a> |
   <a href="#information">Information</a>
 </nav>
 
 <hr>
 
+<!-- HOME SECTION -->
 <div id="home">
   <h1>Dhillon Finance Services</h1>
-  <button onclick="showalert()">ALERT⚠️</button>
+
+  <p>
+    Dhillon Finance Services is a loan assistance service based in Ludhiana.
+    We help individuals and businesses apply for home loans, personal loans,
+    business loans, and loan against property through trusted banks.
+  </p>
+
+  <p>
+    Our goal is to make the loan process easy, transparent, and understandable.
+    This website helps users submit loan requests and get proper guidance.
+  </p>
+
+  <button onclick="showalert()">ALERT ⚠️</button>
 </div>
 
 <script>
   function showalert() {
-    alert("🚨 Please read it:loan in ludhiana only.")
+    alert("🚨 Please read it: Loan services available in Ludhiana only.");
   }
 </script>
 
-<br><br>
-
+<!-- SERVICES -->
 <div id="services">
-  <h1>Services:</h1>
-  <h2>Different types</h2>
-  <p>We help to take a loan from different banks and also four types of loans.</p>
+  <h1>Our Services</h1>
 
-  <h2>Easy loan</h2>
-  <p>We help to take the loan easily.</p>
+  <h2>Loan Assistance</h2>
+  <p>
+    We assist customers in Ludhiana with loan applications from multiple banks.
+    Our services include home loans, personal loans, business loans, and
+    loan against property with simple documentation support.
+  </p>
+
+  <h2>Easy Process</h2>
+  <p>
+    We provide step-by-step guidance to ensure a smooth and hassle-free
+    loan approval experience.
+  </p>
 </div>
 
-<br><br>
-
+<!-- CONTACT -->
 <div id="contact">
-  <h1>Contact us:</h1>
+  <h1>Contact Us</h1>
 
   <form action="https://formsubmit.co/abhisim66@gmail.com" method="POST">
     <input type="text" name="name" placeholder="Enter your name" required>
     <br><br>
 
-    <input
-      type="tel"
-      name="phone"
-      pattern="[0-9]{10}"
-      placeholder="Enter your mobile phone"
-      required>
+    <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Enter your mobile number" required>
     <br><br>
 
-    <h3>LOAN TYPE:</h3>
-
+    <h3>Loan Type</h3>
     <select name="loan_type" required>
       <option value="">Select Loan Type</option>
       <option>HOME LOAN</option>
@@ -143,23 +168,30 @@
     </select>
 
     <br><br>
-
     <button type="submit">SEND 📤</button>
   </form>
 </div>
- 
+
+<!-- INFORMATION -->
 <div id="information">
-   <h1>Get our information:</h1>
-   <section id="location">
-     <h2>Our office location:</h2>
-     <p>SCO 15, 206 NO.CABIN,5th Floor,FEROZE GANDHI MARKET,LUDHIANA.</p>
-   </section>
-   <section id="box">
-     <h4>Don't want to fill form:</h4>
-     <p>Contact no.+91 79860-14325<br>
-     Contact email: sukhjindersingh19780@gmail.com</p>
-   </section>
+  <h1>Our Information</h1>
+
+  <section id="location">
+    <h2>Office Location</h2>
+    <p>
+      SCO 15, Cabin No. 206, 5th Floor,<br>
+      Feroze Gandhi Market, Ludhiana.
+    </p>
+  </section>
+
+  <section id="box">
+    <h4>Direct Contact</h4>
+    <p>
+      Phone: +91 79860-14325<br>
+      Email: sukhjindersingh19780@gmail.com
+    </p>
+  </section>
 </div>
 
 </body>
-  </html>
+                    </html>
