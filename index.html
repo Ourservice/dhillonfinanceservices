@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Loan</title>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      animation: fadeIn .8s ease;
+    }
+
+    nav {
+      background-color: black;
+      padding: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    #home {
+      background-color: #4169E1;
+      font-size: 1.5rem;
+      padding: 40px 20px; /* adjusted for mobile */
+      color: white;
+    }
+
+    #services {
+      box-shadow: 4px 2px 20px grey;
+      padding: 40px;
+    }
+
+    input {
+      border-radius: 20px;
+      height: 40px;
+      width: 100%;
+      max-width: 300px;
+      padding: 10px;
+    }
+
+    select {
+      border-radius: 20px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    #contact {
+      box-shadow: 4px 2px 20px grey;
+      padding: 40px;
+    }
+
+    #location {
+      box-shadow: 4px 2px 20px grey;
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    button {
+      border-radius: 20px;
+      background-color: green;
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    #box {
+      border: 2px solid black;
+      padding: 10px;
+      width: 100%;
+      max-width: 250px;
+    }
+  </style>
+</head>
+
+<body>
+<nav>
+  <a href="#home">Home</a>|
+  <a href="#services">Services</a>|
+  <a href="#contact">Contact</a>|
+  <a href="#information">Information</a>
+</nav>
+
+<hr>
+
+<div id="home">
+  <h1>Dhillon Finance Services</h1>
+  <button onclick="showalert()">ALERT⚠️</button>
+</div>
+
+<script>
+  function showalert() {
+    alert("🚨 Please read it:loan in ludhiana only.")
+  }
+</script>
+
+<br><br>
+
+<div id="services">
+  <h1>Services:</h1>
+  <h2>Different types</h2>
+  <p>We help to take a loan from different banks and also four types of loans.</p>
+
+  <h2>Easy loan</h2>
+  <p>We help to take the loan easily.</p>
+</div>
+
+<br><br>
+
+<div id="contact">
+  <h1>Contact us:</h1>
+
+  <form action="https://formsubmit.co/abhisim66@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Enter your name" required>
+    <br><br>
+
+    <input
+      type="tel"
+      name="phone"
+      pattern="[0-9]{10}"
+      placeholder="Enter your mobile phone"
+      required>
+    <br><br>
+
+    <h3>LOAN TYPE:</h3>
+
+    <select name="loan_type" required>
+      <option value="">Select Loan Type</option>
+      <option>HOME LOAN</option>
+      <option>LOAN AGAINST PROPERTY</option>
+      <option>BUSINESS LOAN</option>
+      <option>PERSONAL LOAN</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">SEND 📤</button>
+  </form>
+</div>
+ 
+<div id="information">
+   <h1>Get our information:</h1>
+   <section id="location">
+     <h2>Our office location:</h2>
+     <p>SCO 15, 206 NO.CABIN,5th Floor,FEROZE GANDHI MARKET,LUDHIANA.</p>
+   </section>
+   <section id="box">
+     <h4>Don't want to fill form:</h4>
+     <p>Contact no.+91 79860-14325<br>
+     Contact email: sukhjindersingh19780@gmail.com</p>
+   </section>
+</div>
+
+</body>
+  </html>
