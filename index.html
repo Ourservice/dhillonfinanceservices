@@ -203,40 +203,83 @@ for quick assistance.
 </script>
 
 <!-- SERVICES SECTION -->
+<sec<!-- SERVICES -->
 <section id="services">
   <h2>Our Services</h2>
+  <p>Click a button to see details about each service we provide:</p>
 
-  <!-- First 3 services (already visible) -->
-  <ul>
-    <li>Home Loan</li>
-    <li>Personal Loan</li>
-    <li>Business Loan</li>
-  </ul>
+  <!-- Buttons for your actual services -->
+  <div class="service-buttons">
+    <button onclick="showService('homeLoan')">Home Loan</button>
+    <button onclick="showService('personalLoan')">Personal Loan</button>
+    <button onclick="showService('businessLoan')">Business Loan</button>
+    <button onclick="showService('loanAgainstProperty')">Loan Against Property</button>
+    <button onclick="showService('giftProperty')">Gift Property Assistance</button>
+  </div>
 
-  <!-- Hidden extra services -->
-  <ul id="extra-services" style="display:none; margin-top:10px;">
-    <li>Loan Against Property</li>
-    <li>Gift Property Assistance</li>
-  </ul>
+  <!-- Service details (hidden by default) -->
+  <div id="service-details" class="service-details">
+    <p id="homeLoan" class="service-item" style="display:none;">
+      <strong>Home Loan:</strong> We guide you through home loan applications with simple documentation and the best bank options in Ludhiana.
+    </p>
 
-  <!-- Button to show extra services -->
-  <button onclick="showExtraServices()" style="
-    margin-top:10px; 
-    padding:8px 15px; 
-    border-radius:10px; 
-    background-color:#4169E1; 
-    color:white; 
-    border:none; 
-    cursor:pointer;
-  ">
-    Show More Services
-  </button>
+    <p id="personalLoan" class="service-item" style="display:none;">
+      <strong>Personal Loan:</strong> Get assistance for personal loans with transparent processes and guidance for quick approval.
+    </p>
+
+    <p id="businessLoan" class="service-item" style="display:none;">
+      <strong>Business Loan:</strong> We support businesses in Ludhiana with loan applications, eligibility checks, and smooth processing.
+    </p>
+
+    <p id="loanAgainstProperty" class="service-item" style="display:none;">
+      <strong>Loan Against Property:</strong> Guidance for securing loans using your property as collateral with trusted banks.
+    </p>
+
+    <p id="giftProperty" class="service-item" style="display:none;">
+      <strong>Gift Property Assistance:</strong> Help with legal processes and guidance for gifting property or transferring property ownership safely.
+    </p>
+  </div>
 </section>
 
-<!-- SIMPLE JAVASCRIPT -->
+<!-- CSS -->
+<style>
+  .service-buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    background-color: #4169E1;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .service-buttons button:hover {
+    background-color: #27408B;
+  }
+
+  .service-details {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #4169E1;
+    border-radius: 10px;
+    background-color: #f0f8ff;
+  }
+
+  .service-item {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+</style>
+
+<!-- JS -->
 <script>
-function showExtraServices() {
-  document.getElementById('extra-services').style.display = 'block';
+function showService(serviceId) {
+  const items = document.querySelectorAll('.service-item');
+  items.forEach(item => item.style.display = 'none');
+
+  const selected = document.getElementById(serviceId);
+  if(selected) selected.style.display = 'block';
 }
 </script>
 <!-- CONTACT -->
