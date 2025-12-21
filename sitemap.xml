@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://www.dhillonfinance.com/</loc>
+    <loc>https://dhillonfinanceservices.github.io/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://www.dhillonfinance.com/#services</loc>
+    <loc>https://dhillonfinanceservices.github.io/#services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.dhillonfinance.com/#contact</loc>
+    <loc>https://dhillonfinanceservices.github.io/#contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.dhillonfinance.com/#information</loc>
+    <loc>https://dhillonfinanceservices.github.io/#information</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
