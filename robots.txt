@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://abhisim66-coder.github.io/sitemap.xml
+Sitemap: https://www.dhillonfinance.com/sitemap.xml
