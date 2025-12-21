@@ -202,27 +202,43 @@ for quick assistance.
   }
 </script>
 
-<!-- SERVICES -->
+<!-- SERVICES SECTION -->
 <section id="services">
-  <h2>Loan Services in Ludhiana</h2>
+  <h2>Our Services</h2>
 
-  <h3>Loan Assistance</h3>
-  
-     <p>
-Our services include assistance with documentation, eligibility checking,
-and application submission for different types of loans. Whether you are
-looking for a home loan, personal loan, or business loan, we guide you
-through every step of the loan approval process.
-     </p>
+  <!-- First 3 services (already visible) -->
+  <ul>
+    <li>Home Loan</li>
+    <li>Personal Loan</li>
+    <li>Business Loan</li>
+  </ul>
 
-  <h3>Easy Process</h3>
-  <p>
-    We provide step-by-step guidance to ensure a smooth and hassle-free
-    loan approval experience.
-  </p>
+  <!-- Hidden extra services -->
+  <ul id="extra-services" style="display:none; margin-top:10px;">
+    <li>Loan Against Property</li>
+    <li>Gift Property Assistance</li>
+  </ul>
 
+  <!-- Button to show extra services -->
+  <button onclick="showExtraServices()" style="
+    margin-top:10px; 
+    padding:8px 15px; 
+    border-radius:10px; 
+    background-color:#4169E1; 
+    color:white; 
+    border:none; 
+    cursor:pointer;
+  ">
+    Show More Services
+  </button>
 </section>
 
+<!-- SIMPLE JAVASCRIPT -->
+<script>
+function showExtraServices() {
+  document.getElementById('extra-services').style.display = 'block';
+}
+</script>
 <!-- CONTACT -->
 <section id="contact">
   <h2>Contact Dhillon Financial Services</h2>
