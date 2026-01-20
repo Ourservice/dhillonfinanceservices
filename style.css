@@ -1,0 +1,261 @@
+  /* GENERAL STYLES */
+  *::selector {
+    color: yellow;
+    background-color: #000;
+  }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      animation: fadeIn 0.8s ease;
+      background-color: #f9f9f9;
+    }
+
+    h1, h2, h3, h4 {
+      margin: 0;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background-color: black;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      margin: 0;
+      border: none;
+      border-top: 2px solid #4169E1;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 40px 20px;
+      margin: 20px auto;
+      max-width: 1200px;
+    }
+
+    /* LOGO */
+    .logo-box {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .logo-circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-circle img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    .logo-text h1 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    .logo-text h2 {
+      font-size: 1rem;
+      text-align: center;
+      opacity: 0.9;
+      margin-top: 5px;
+    }
+
+    /* HOME SECTION */
+    #home {
+      background-color: #4169E1;
+      color: white;
+      border-radius: 15px;
+    }
+
+    #home button {
+      border-radius: 20px;
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    #home button:hover {
+      background-color: darkgreen;
+    }
+
+    /* SERVICES */
+    #services, #contact, #information, #call, #why, #chat, #faq, #privacy {
+      background-color: white;
+      box-shadow: 4px 2px 20px grey;
+      border-radius: 15px;
+    }
+
+    .service-buttons button {
+      margin: 5px;
+      padding: 10px 15px;
+      border-radius: 15px;
+      border: none;
+      background-color: #4169E1;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .service-buttons button:hover {
+      background-color: #27408B;
+    }
+
+    .service-details {
+      margin-top: 20px;
+      padding: 15px;
+      border: 2px solid #4169E1;
+      border-radius: 10px;
+      background-color: #f0f8ff;
+    }
+
+    input, select {
+      border-radius: 20px;
+      height: 40px;
+      width: 100%;
+      max-width: 300px;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      border-radius: 20px;
+      background-color: #4169E1;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #27408B;
+    }
+
+    #location iframe {
+      width: 100%;
+      height: 250px;
+      border: 0;
+      border-radius: 15px;
+    }
+
+    #call {
+      position: fixed;
+      bottom: 0;
+      left:25px;
+      width: 100%;
+      color:#fff;
+      text-align: center;
+      padding: 1px 1px;
+      z-index: 1000;
+      display: inline;
+      background-color: aqua;
+      color: #27408B;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .logo-box {
+        flex-direction: column;
+      }
+
+      input, select {
+        max-width: 100%;
+      }
+    }
+     /* Logo Animation: Fade in, scale, fade out */
+
+.bounce-logo {
+  animation: bounceIn 1s ease forwards;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(1.5);
+  }
+  30% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+     }
+     #greetings {
+      height: 100px;
+      color: rgb(14, 178, 233);
+      display: block;
+      width: 50;
+      background-color: blueviolet;
+      border-radius: 50%;
+      border-style: dashed;
+      border-color: chartreuse;
+      text-align: center;
+     }
+    
+     #space {
+      height: 150px;
+     }
+  

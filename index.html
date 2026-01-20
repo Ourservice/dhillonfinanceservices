@@ -39,243 +39,8 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.dhillonfinanceservices.com">
 
-  <!-- CSS -->
-  <style>
-    /* GENERAL STYLES */
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      animation: fadeIn 0.8s ease;
-      background-color: #f9f9f9;
-    }
-
-    h1, h2, h3, h4 {
-      margin: 0;
-    }
-
-    p {
-      line-height: 1.6;
-    }
-
-    /* NAVIGATION */
-    nav {
-      background-color: black;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    hr {
-      margin: 0;
-      border: none;
-      border-top: 2px solid #4169E1;
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 40px 20px;
-      margin: 20px auto;
-      max-width: 1200px;
-    }
-
-    /* LOGO */
-    .logo-box {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-
-    .logo-circle {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      background-color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .logo-circle img {
-      width: 60px;
-      height: 60px;
-      object-fit: contain;
-    }
-
-    .logo-text h1 {
-      font-size: 1.8rem;
-      text-align: center;
-    }
-
-    .logo-text h2 {
-      font-size: 1rem;
-      text-align: center;
-      opacity: 0.9;
-      margin-top: 5px;
-    }
-
-    /* HOME SECTION */
-    #home {
-      background-color: #4169E1;
-      color: white;
-      border-radius: 15px;
-    }
-
-    #home button {
-      border-radius: 20px;
-      background-color: green;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      margin-top: 15px;
-    }
-
-    #home button:hover {
-      background-color: darkgreen;
-    }
-
-    /* SERVICES */
-    #services, #contact, #information, #call, #why, #chat, #faq, #privacy {
-      background-color: white;
-      box-shadow: 4px 2px 20px grey;
-      border-radius: 15px;
-    }
-
-    .service-buttons button {
-      margin: 5px;
-      padding: 10px 15px;
-      border-radius: 15px;
-      border: none;
-      background-color: #4169E1;
-      color: white;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .service-buttons button:hover {
-      background-color: #27408B;
-    }
-
-    .service-details {
-      margin-top: 20px;
-      padding: 15px;
-      border: 2px solid #4169E1;
-      border-radius: 10px;
-      background-color: #f0f8ff;
-    }
-
-    input, select {
-      border-radius: 20px;
-      height: 40px;
-      width: 100%;
-      max-width: 300px;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-    }
-
-    button {
-      border-radius: 20px;
-      background-color: #4169E1;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #27408B;
-    }
-
-    #location iframe {
-      width: 100%;
-      height: 250px;
-      border: 0;
-      border-radius: 15px;
-    }
-
-    #box, #hi {
-      border: 2px solid black;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 400px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #000;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    footer a {
-      color: white;
-      text-decoration: underline;
-    }
-
-    /* ANIMATION */
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      .logo-box {
-        flex-direction: column;
-      }
-
-      input, select, #box, #hi {
-        max-width: 100%;
-      }
-    }
-     /* Logo Animation: Fade in, scale, fade out */
-.animated-logo {
- /* Bounce animation for logo */
-.bounce-logo {
-  animation: bounceIn 1s ease forwards;
-}
-
-@keyframes bounceIn {
-  0% {
-    transform: scale(1.5);
-  }
-  30% {
-    transform: scale(0.8);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  70% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(1);
-  }
-     }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 
 <body>
@@ -283,9 +48,9 @@
   <!-- NAVIGATION -->
   <nav>
     <a href="#home">Home</a> |
-    <a href="#services">Services</a> |
-    <a href="#contact">Contact</a> |
-    <a href="#information">Information</a>
+    <a href="service.html">Services</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="information.html">Information</a>
   </nav>
 
   <hr>
@@ -327,138 +92,26 @@
       <button onclick="showalert()">ALERT ⚠️</button>
     </section>
 
-    <script>
-      function showalert() {
-        alert("🚨 Please read it: Loan services available in Ludhiana only.");
-      }
-    </script>
+    <script src="script.js"></script>
 
-    <!-- SERVICES -->
-    <section id="services">
-      <h2>Our Services</h2>
-      <p>Click a button to see details about each service we provide:</p>
-
-      <div class="service-buttons">
-        <button onclick="showService('homeLoan')">Home Loan</button>
-        <button onclick="showService('personalLoan')">Personal Loan</button>
-        <button onclick="showService('businessLoan')">Business Loan</button>
-        <button onclick="showService('loanAgainstProperty')">Loan Against Property</button>
-        <button onclick="showService('giftProperty')">Gift Property Assistance</button>
-      </div>
-
-      <div id="service-details" class="service-details">
-        <p id="homeLoan" class="service-item" style="display:none;">
-          <strong>Home Loan:</strong> We guide you through home loan applications with simple documentation and the best bank options in Ludhiana.
-        </p>
-        <p id="personalLoan" class="service-item" style="display:none;">
-          <strong>Personal Loan:</strong> Get assistance for personal loans with transparent processes and guidance for quick approval.
-        </p>
-        <p id="businessLoan" class="service-item" style="display:none;">
-          <strong>Business Loan:</strong> We support businesses in Ludhiana with loan applications, eligibility checks, and smooth processing.
-        </p>
-        <p id="loanAgainstProperty" class="service-item" style="display:none;">
-          <strong>Loan Against Property:</strong> Guidance for securing loans using your property as collateral with trusted banks.
-        </p>
-        <p id="giftProperty" class="service-item" style="display:none;">
-          <strong>Gift Property Assistance:</strong> Help with legal processes and guidance for gifting property or transferring property ownership safely.
-        </p>
-      </div>
-    </section>
-
-    <script>
-      function showService(serviceId) {
-        const items = document.querySelectorAll('.service-item');
-        items.forEach(item => item.style.display = 'none');
-
-        const selected = document.getElementById(serviceId);
-        if(selected) selected.style.display = 'block';
-      }
-    </script>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact Dhillon Financial Services</h2>
-      <p>If you are planning to apply for a loan in Ludhiana, feel free to contact
-        us using the form below. Our team will review your details and provide
-        proper guidance based on your loan requirements and eligibility.</p>
-
-      <form action="https://formsubmit.co/abhisim66@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Enter your name" required>
-         <br><br>
-        <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Enter your mobile number" required>
-        <h3>Loan Type</h3>
-         <br><br>
-        <select name="loan_type" required>
-          <option value="">Select Loan Type</option>
-          <option>HOME LOAN</option>
-          <option>LOAN AGAINST PROPERTY</option>
-          <option>BUSINESS LOAN</option>
-          <option>PERSONAL LOAN</option>
-        </select>
-        <button type="submit">SEND 📤</button>
-      </form>
-    </section>
-
-    <!-- INFORMATION -->
-    <section id="information">
-      <h2>Our Information</h2>
-
-      <div id="location">
-        <h3>Office Location</h3>
-        <p>
-          SCO 15, Cabin No. 206, 5th Floor,<br>
-          Feroze Gandhi Market, Ludhiana.
-        </p>
-         <br><br>
-        <iframe src="https://www.google.com/maps?q=Feroze%20Gandhi%20Market%20Ludhiana&output=embed" loading="lazy"></iframe>
-      </div>
-
-      <div id="box">
-        <h4>Direct Contact</h4>
-        <p>
-          Phone: +91 79860-14325<br>
-          Email: sukhjindersingh19780@gmail.com
-        </p>
-      </div>
-<br><br>
-      <div id="hi">
-        <h4>Our bank services:</h4>
-        <ul>
-          <li>HDFC BANK</li>
-          <li>AXIS BANK</li>
-          <li>ICICI BANK</li>
-          <li>BANK OF INDIA</li>
-          <li>PNB BANK</li>
-          <li>YES BANK</li>
-          <li>NBFC BANKS</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- CALL & WHY CHOOSE US -->
+    
+    
+    
     <section id="call">
-      <h2>Call us directly:</h2>
       <a href="tel:+917986014325">
-        <button aria-label="Call Dhillon Financial Services">Call us 📞</button>
-      </a>
+    <button>Call us 📞</button>
+    </a>
+    <br><br>
+ <button onclick="window.location.href='https://wa.me/917986014325?text=Hello%20there!'">Chat on WhatsApp</button>
     </section>
-
-    <section id="why">
+ <section id="why">
       <h3>Why choose us:</h3>
       <p>
         We are committed to providing simple, fast, and transparent loan assistance.
         Our team focuses on easy documentation, smooth processing, and reliable
         guidance to help customers in Ludhiana choose the right loan solution.
       </p>
-    </section>
-
-    <!-- WHATSAPP CHAT -->
-    <section id="chat">
-      <h4>Chat us on WhatsApp:</h4>
-       <br><br>
-      <button onclick="window.location.href='https://wa.me/917986014325?text=Hello%20there!'">Chat on WhatsApp</button>
-    </section>
-
+ </section>
     <!-- PRIVACY POLICY -->
     <section id="privacy">
       <h2>Privacy Policy</h2>
@@ -491,6 +144,10 @@
     <p>Home Loan | Personal Loan | Business Loan</p>
     <p><a href="#privacy">Privacy Policy</a></p>
   </footer>
-
+  <br><br>
+  <div id="greetings">
+    <h2>Thanks! For visiting</h2>
+  </div>
+  <div id="space"></div>
 </body>
      </html>  
