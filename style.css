@@ -1,8 +1,4 @@
-  /* GENERAL STYLES */
-  *::selector {
-    color: yellow;
-    background-color: #000;
-  }
+
     html {
       scroll-behavior: smooth;
     }
@@ -176,7 +172,7 @@
     #call {
       position: fixed;
       bottom: 0;
-      left:25px;
+      left:15px;
       width: 100%;
       color:#fff;
       text-align: center;
