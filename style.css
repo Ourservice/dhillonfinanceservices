@@ -176,11 +176,12 @@
       width: 100%;
       color:#fff;
       text-align: center;
-      padding: 1px 1px;
+      padding: 0;
       z-index: 1000;
       display: inline;
       background-color: aqua;
       color: #27408B;
+        rigth:0;
     }
 
     ul {
