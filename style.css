@@ -260,6 +260,9 @@
     background-color:blue;
     padding:20px;
     text-decoration:none;
+    bottom:100px;
+    color:green;
+    border-radius:20px;
 }
 .return:hover {
     text-decoration:none;
