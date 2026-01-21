@@ -34,7 +34,8 @@
     }
 
     nav a:hover {
-      text-decoration: underline;
+      text-decoration: none;
+        color:green;
     }
 
     hr {
@@ -255,8 +256,3 @@
      #space {
       height: 150px;
      }
-a:hover {
-    text-decoration:none;
-    color:green;
-}
-  
